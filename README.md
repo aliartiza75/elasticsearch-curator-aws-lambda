@@ -50,6 +50,6 @@ zip -g elasticsearch-curator-lambda.zip lambda_function.py
 |---|---|---|
 | ES_HOST | Elasticsearch URL without `https//` | localhost |
 | ES_RESION | Elasticsearch cluster reason | us-west-1 |
-| ES_INDICES_DATA_RETENTION_DAYS_THRESHOLD | Data retention period in days. | 90 |
-| ES_INDICES_PREFIX_TO_BE_DELETED | Indices prefix, it will be used as **`first`** filter, it will filter all the indices that have this prefix in their name. The remaining indices name will be filtered based on the age filter ES_INDICES_DATE_FORMAT. The reason to do these two filters is that we don't want to delete | logs |
+| ES_INDICES_DATA_RETENTION_THRESHOLD_IN_DAYS | Data retention period in days. | 90 |
+| ES_INDICES_PREFIX | Indices prefix, it will be used as **`first`** filter, it will filter all the indices that have this prefix in their name. The remaining indices name will be filtered based on the age filter ES_INDICES_DATE_FORMAT. The reason to do these two filters is that we don't want to delete | logs |
 | ES_INDICES_DATE_FORMAT | Date format in the indices name. Indices will be filtered if their date is older than ES_INDICES_DATA_RETENTION_DAYS_THRESHOLD | %Y.%m.%d |
