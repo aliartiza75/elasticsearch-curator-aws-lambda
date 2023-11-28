@@ -4,5 +4,5 @@ pycodestyle==2.5.0
 elasticsearch==7.7.0
 requests==2.23.0
 requests-aws4auth==0.9
-urllib3==1.24.3
+urllib3==1.26.5
 elasticsearch-curator==5.8.1
